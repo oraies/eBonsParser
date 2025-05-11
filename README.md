@@ -14,12 +14,9 @@ It extracts structured data such as store details, purchase date, payment method
 
 ## 📦 Installation
 
-Clone the repo and install in editable mode:
-
+You can install the package using pip:
 ```bash
-git clone https://github.com/YOUR_USERNAME/eBonsParser.git
-cd eBonsParser
-pip install -e .
+pip install eBonsParser
 ```
 
 ## 🧠 Usage
