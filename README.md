@@ -3,7 +3,7 @@
 **eBonsParser** is a modular Python library for parsing digital receipt PDFs (eBons) used in Germany.  
 It extracts structured data such as store details, purchase date, payment method, and a full itemized list.
 
-🛒 Currently supports **REWE** receipts — built to extend to other German retailers (e.g., Lidl, Edeka, Aldi).
+🛒 Currently supports **REWE** and **Thalia** receipts — built to extend to other German retailers (e.g., Lidl, Edeka, Aldi).
 
 ---
 ## 🚀 Features
@@ -21,11 +21,16 @@ pip install eBonsParser
 
 ## 🧠 Usage
 ```python
-from eBonsParser import Rewe
+from eBonsParser.stores import Rewe,Thalia 
 
-pdf_file_path = "path/to/your/rewe.pdf"
+pdf_file_path = "path/to/your/ebon.pdf"
+
 rewe = Rewe()
+thalia = Thalia()
+
 receipt = rewe.parse_ebon(pdf_file_path)
+receipt = thalia.parse_ebon(pdf_file_path)
+
 print(receipt.model_dump_json(indent=4))
 ```
 This will return a structured *Receipt* object like:

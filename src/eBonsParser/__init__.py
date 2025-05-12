@@ -1,4 +1,4 @@
-from .stores.rewe import Rewe
-from .models import Receipt
+from .stores import Rewe
+from .stores import Thalia
 
-__all__ = ["Rewe","Receipt"]
+__all__ = ["Rewe","Thalia"]

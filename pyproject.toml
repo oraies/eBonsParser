@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "eBonsParser"
-version = "0.1.0"
-description = "A Python library to parse German eBon (digital receipt) PDFs. Currently supports REWE receipts."
+version = "0.1.1"
+description = "A Python library to parse German eBon (digital receipt) PDFs. Currently supports REWE/Thalia receipts."
 authors = [
     { name = "Oussama Raies", email = "oussama.raies@rwth-aachen.de" }
 ]
